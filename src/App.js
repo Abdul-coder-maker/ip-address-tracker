@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import Map from "./Map.js";
 
@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="antialiased App font-rubik text-[#2C2C2C]">
       <header className="relative bg-[url('./images/pattern-bg.png')] h-[300px] pt-[26px] lg:pt-[33px] bg-cover text-center lg:h-[280px]">
-        <h1 className="text-white font-medium text-2xl text-[26px] tracking-tight px-6">
+        <h1 className="text-white font-medium text-2xl text-[26px] tracking-tight px-6 lg:text-[32px] lg:leading-[30px]">
           IP Addrees Tracker
         </h1>
 
@@ -82,14 +82,16 @@ function App() {
               <h2 className="text-xs text-[10px] font-bold opacity-50 tracking-widest">
                 IP ADDRESS
               </h2>
-              <p className="text-xl font-medium">{ipAddress.ip}</p>
+              <p className="text-xl font-medium lg:text-[26px] leading-[30px]">
+                {ipAddress.ip}
+              </p>
             </div>
 
             <div className="space-y-[7px] lg:pr-16 lg:border-r lg:border-gray-200 lg:text-left">
               <h2 className="text-xs text-[10px] font-bold opacity-50 tracking-widest">
                 LOCATION
               </h2>
-              <p className="text-xl font-medium">
+              <p className="text-xl font-medium lg:text-[26px] leading-[30px]">
                 {ipAddress.city}, {ipAddress.region}
               </p>
             </div>
@@ -98,14 +100,18 @@ function App() {
               <h2 className="text-xs text-[10px] font-bold opacity-50 tracking-widest">
                 TIMEZONE
               </h2>
-              <p className="text-xl font-medium">{ipAddress.timezone}</p>
+              <p className="text-xl font-medium lg:text-[26px] leading-[30px]">
+                {ipAddress.timezone}
+              </p>
             </div>
 
             <div className="space-y-[7px] lg:pr-16  lg:text-left">
               <h2 className="text-xs text-[10px] font-bold opacity-50 tracking-widest">
                 ISP
               </h2>
-              <p className="text-xl font-medium">{ipAddress.org}</p>
+              <p className="text-xl font-medium lg:text-[26px] leading-[30px]">
+                {ipAddress.org}
+              </p>
             </div>
           </div>
         )}
