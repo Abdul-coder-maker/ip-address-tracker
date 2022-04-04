@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 
 import Map from "./Map.js";
-//
 
 function App() {
   const [lng, setLng] = useState(0);
@@ -18,7 +17,7 @@ function App() {
       [name]: value,
     }));
   }
-  // fetch api
+
   function fetchAPI() {
     fetch(`https://ipapi.co/${getIpfromUser.ip}/json/`)
       .then((res) => res.json())
@@ -42,7 +41,6 @@ function App() {
   useEffect(() => {
     fetchAPI();
   }, []);
-  console.log(lng, lat);
   return (
     <div className="antialiased App font-rubik text-[#2C2C2C]">
       <header className="relative bg-[url('./images/pattern-bg.png')] h-[300px] pt-[26px] lg:pt-[33px] bg-cover text-center lg:h-[280px]">
