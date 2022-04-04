@@ -63,8 +63,9 @@ function App() {
               pattern="(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}"
               title="Search for any IP address or domain"
               placeholder="Search for any IP address or domain"
+              aria-label="Search for any IP address or domain"
             />
-            <button className="bg-black min-w-[58px] h-full rounded-r-2xl flex justify-center items-center hover:bg-[#3F3F3F] transition-colors duration-500 ease-in-out">
+            <button title="Search for IP Address" className="bg-black min-w-[58px] h-full rounded-r-2xl flex justify-center items-center hover:bg-[#3F3F3F] transition-colors duration-500 ease-in-out">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
                 <path
                   fill="none"
