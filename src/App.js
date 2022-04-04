@@ -17,7 +17,6 @@ function App() {
       [name]: value,
     }));
   }
-
   function fetchAPI() {
     fetch(`https://ipapi.co/${getIpfromUser.ip}/json/`)
       .then((res) => res.json())
@@ -26,7 +25,7 @@ function App() {
         setLng(data.longitude);
         setLat(data.latitude);
         setIsLoaded(true);
-        console.log(data)
+        console.log(data);
       });
   }
   function handleSubmit(e) {
@@ -57,14 +56,15 @@ function App() {
             <input
               id="ipAddress"
               type="text"
-              className="w-full px-6 rounded-l-2xl py-[18px] text-lg"
+              className="w-full px-6 rounded-l-2xl py-[18px] text-lg shadow-[0_50px_50px_-25px_rgba(0,0,0,0.1)] caret-black focus:outline-none"
               name="ip"
               value={getIpfromUser.ip}
               onChange={handleChange}
               pattern="(\b25[0-5]|\b2[0-4][0-9]|\b[01]?[0-9][0-9]?)(\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}"
+              title="Search for any IP address or domain"
               placeholder="Search for any IP address or domain"
             />
-            <button className="bg-black min-w-[58px] h-full rounded-r-2xl flex justify-center items-center">
+            <button className="bg-black min-w-[58px] h-full rounded-r-2xl flex justify-center items-center hover:bg-[#3F3F3F] transition-colors duration-500 ease-in-out">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
                 <path
                   fill="none"
