@@ -79,7 +79,7 @@ function App() {
         {ipAddress && (
           <div className="mx-auto w-[327px] rounded-2xl absolute left-1/2 -translate-x-1/2 z-50 mt-6 py-[26px] bg-white text-center shadow-[0_50px_50px_-25px_rgba(0,0,0,0.1)] space-y-6 lg:w-[1110px] lg:space-y-0 lg:flex lg:pl-8 lg:space-x-8 lg:mt-12">
             <div className="space-y-[7px] lg:pr-16 lg:border-r lg:border-gray-200 lg:text-left">
-              <h2 className="text-xs text-[10px] font-bold opacity-50 tracking-widest">
+              <h2 className="lg:text-xs text-[10px] font-bold opacity-50 tracking-widest">
                 IP ADDRESS
               </h2>
               <p className="text-xl font-medium lg:text-[26px] leading-[30px]">
@@ -88,7 +88,7 @@ function App() {
             </div>
 
             <div className="space-y-[7px] lg:pr-16 lg:border-r lg:border-gray-200 lg:text-left">
-              <h2 className="text-xs text-[10px] font-bold opacity-50 tracking-widest">
+              <h2 className="lg:text-xs text-[10px] font-bold opacity-50 tracking-widest">
                 LOCATION
               </h2>
               <p className="text-xl font-medium lg:text-[26px] leading-[30px]">
@@ -97,7 +97,7 @@ function App() {
             </div>
 
             <div className="space-y-[7px] lg:pr-16 lg:border-r lg:border-gray-200 lg:text-left">
-              <h2 className="text-xs text-[10px] font-bold opacity-50 tracking-widest">
+              <h2 className="lg:text-xs text-[10px] font-bold opacity-50 tracking-widest">
                 TIMEZONE
               </h2>
               <p className="text-xl font-medium lg:text-[26px] leading-[30px]">
@@ -106,7 +106,7 @@ function App() {
             </div>
 
             <div className="space-y-[7px] lg:pr-16  lg:text-left">
-              <h2 className="text-xs text-[10px] font-bold opacity-50 tracking-widest">
+              <h2 className="lg:text-xs text-[10px] font-bold opacity-50 tracking-widest">
                 ISP
               </h2>
               <p className="text-xl font-medium lg:text-[26px] leading-[30px]">
